@@ -1,0 +1,13 @@
+places = ["Paris", "Tokyo", "New York", "London", "Sydney"]
+print(f"Sorted list: {sorted(places)}")
+print(f"Original list: {places}")
+print(f"Reverse sorted list: {sorted(places, reverse=True)}")
+print(f"Original list again: {places}")
+places.reverse()
+print(f"Reversed list: {places}")
+places.reverse()
+print(f"Original list again: {places}")
+places.sort()
+print(f"Sorted list: {places}")
+places.sort(reverse=True)
+print(f"Reverse sorted list: {places}")
