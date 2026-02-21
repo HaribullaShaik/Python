@@ -1,1 +1,1 @@
-I'm learning a Python crash course. These are the practice exercises in each chapter, and I'm also learning git at the same time to manage my local and remote repositories.
+I'm learning a Python crash course by Eric Matthes. These are the practice exercises for each chapter, and I'm also learning Git to manage my local and remote repositories.
