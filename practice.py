@@ -1,5 +1,5 @@
-magicians = ['alice', 'david', 'carolina']
-for magician in magicians:
-    print(f"{magician.title()} is a great magician!")
-    print(f"I can't wait to see {magician.title()} perform next!\n")
-print("Thank you, everyone. That was a great magic show!")
+squares = []
+for i in range(1,11):
+    square = i **2
+    squares.append(square)
+print(squares)
