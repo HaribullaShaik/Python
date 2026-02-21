@@ -1,5 +1,6 @@
-squares = []
-for i in range(1,11):
-    square = i **2
-    squares.append(square)
-print(squares)
+cars = ["Toyota", "Mercedes", "Audi", "bmw", "Honda"]
+for car in cars:
+    if car == "bmw":
+        print(car.upper())
+    else:
+        print(car.title())
