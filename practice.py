@@ -1,6 +1,9 @@
-cars = ["Toyota", "Mercedes", "Audi", "bmw", "Honda"]
-for car in cars:
-    if car == "bmw":
-        print(car.upper())
-    else:
-        print(car.title())
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+else:
+    price = 10
+    
+print(f"Your admission cost is ${price}.")
