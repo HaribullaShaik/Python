@@ -1,4 +1,5 @@
-def favorite_book(title):
-    """Display a message about someone's favorite book."""
-    print(f"One of my favorite books is {title.title()}.")
-favorite_book('alice in wonderland')
+def describe_pet(pet_name, animal_type = "dog"):
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+describe_pet(pet_name = "willie")
