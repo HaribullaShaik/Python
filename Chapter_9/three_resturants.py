@@ -1,3 +1,4 @@
+# Date: 02-27-2026
 class Resturant:
     """A class representing a restaurant."""
     def __init__(self, name, cuisine_type):
