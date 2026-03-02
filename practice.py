@@ -1,26 +1,13 @@
-class Car:
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-        self.odometer_reading = 0
+class Coordinate:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-    def get_description(self):
-        return f"{self.year} {self.make} {self.model}"
-    def update_odometer(self, mileage):
-        if mileage >= self.odometer_reading:
-            self.odometer_reading = mileage
-        else:
-            print("You can't roll back an odometer!")
-    def increment_odometer(self, miles):
-        if miles >= 0:
-            self.odometer_reading += miles
-        else:
-            print("You can't increment the odometer with negative miles!")
+    def show_coordinates(self):
+        for value in range(self.x, self.y):
+            self.x = value
+            self.y = value
+            print(f"({self.x}, {self.y})")
 
-my_car = Car('Toyota', 'Corolla', 2020)
-print(my_car.get_description())
-my_car.update_odometer(15000)
-print(f"Odometer reading: {my_car.odometer_reading} miles")
-my_car.increment_odometer(-500)
-print(f"Odometer reading after increment: {my_car.odometer_reading} miles")
+coordinate = Coordinate(0, 11)
+coordinate.show_coordinates()
