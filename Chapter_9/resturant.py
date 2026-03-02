@@ -13,7 +13,3 @@ class Resturant:
     def open_restaurant(self):
         """Print a message indicating that the restaurant is open."""
         print(f"{self.name} is now open!")
-
-restaurant = Resturant("Pasta Palace", "Italian")
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
