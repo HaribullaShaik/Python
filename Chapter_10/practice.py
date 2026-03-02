@@ -1,15 +1,7 @@
 from pathlib import Path
-path = Path('pi_million.txt')
-contents = path.read_text()
-print(len(contents))
-lines = contents.splitlines()
-print(len(lines))
-pi_string = ''
-for line in lines:
-    pi_string += line.strip()
 
-birthday = input("Enter your birthday, in the form mmddyy: ")
-if birthday in pi_string:
-    print("Your birthday appears in the first million digits of pi!")
-else:
-    print("Your birthday does not appear in the first million digits of pi.")
+contents = "I Love Programming!\n"
+contents += "I love creating new games.\n"
+contents += "I also love working with data.\n"
+path = Path('Chapter_10/programming.txt')
+path.write_text(contents)
