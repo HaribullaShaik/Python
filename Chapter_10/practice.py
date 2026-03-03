@@ -1,17 +1,6 @@
 from pathlib import Path
-def count_words(path):
-    """Count the approximate number of words in a file."""
-    try:
-        contents = path.read_text(encoding = 'utf-8')
-    except FileNotFoundError:
-        print(f"Sorry, the file {path} does not exist.")
-    else:
-        # Count the approximate number of words in the file.
-        words = contents.split()
-        num_words = len(words)
-        print(f"The file {path} has about {num_words} words.")
-
-filenames = ['alice.txt', 'programming.txt', 'guest.txt']
-for filename in filenames:
-    path = Path(filename)
-    count_words(path)
+import json
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+path = Path('numbers.json')
+contents = json.dumps(numbers)
+path.write_text(contents)
